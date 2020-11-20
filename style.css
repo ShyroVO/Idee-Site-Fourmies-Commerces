@@ -53,7 +53,7 @@ nav {
     flex-direction: row;
 }
 
-nav a {
+nav a, footer a {
     text-decoration-line: none;
     color: #607185;
     padding: 0.3rem;
@@ -70,7 +70,6 @@ nav a:hover {
 /* Corps  */
 .corps {
     box-shadow: darkgray 0 0 1rem;
-    text-align: center;
     padding: 2rem;
 }
 
@@ -86,24 +85,21 @@ nav a:hover {
     width: 30%;
     height: 35rem;
     margin-right: 2rem;
+    border: solid #88C2EA 0.2rem;
 }
 
 .contenuesB {
     width: 70%;
+    border: solid #A1C037 0.2rem;
 }
 
-.sectionA, .sectionB {
+.sectionB {
     background: #EEEEEE;
     padding: 1.5rem;
 }
 
-.sectionA {
-    height: 5rem;
-    margin-bottom: 2rem;
-}
-
 .sectionB {
-    height: 28rem;
+    height: 35rem;
 }
 
 .articles {
@@ -124,10 +120,11 @@ nav a:hover {
 
 footer {
     box-shadow: darkgray 0 -0.3rem 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem;
     height: 4rem;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 
 /* Versions mobiles */
