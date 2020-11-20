@@ -25,6 +25,14 @@ h1 {
     font-size: 3rem;
 }
 
+nav a, footer a, h1 {
+    color: #607185;
+}
+
+.articles, .contenuesA {
+    color: #363e4e;
+}
+
 /* En-Tête, menu Nav, Logo */
 header {
     height: 10rem;
@@ -55,8 +63,11 @@ nav {
 
 nav a, footer a {
     text-decoration-line: none;
-    color: #607185;
     padding: 0.3rem;
+}
+
+footer a:hover {
+    color: #363e4e;
 }
 
 nav a:first-child, nav a:first-child:hover {
@@ -68,42 +79,38 @@ nav a:hover {
 }
 
 /* Corps  */
-.corps {
+.contenuesGeneral {
     box-shadow: darkgray 0 0 1rem;
     padding: 2rem;
-}
-
-.contenuesGeneral {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 2rem;
 }
 
 .contenuesA {
     background: #EEEEEE;
-    width: 30%;
+    width: 25%;
     height: 35rem;
+    padding: 2rem;
     margin-right: 2rem;
     border: solid #88C2EA 0.2rem;
 }
 
+.contenuesA aside div {
+    padding: 1rem 0;
+}
+
 .contenuesB {
-    width: 70%;
+    width: 100%;
     border: solid #A1C037 0.2rem;
+    padding: 2rem;
 }
 
 .sectionB {
-    background: #EEEEEE;
-    padding: 1.5rem;
-}
-
-.sectionB {
-    height: 35rem;
+    height: 30rem;
 }
 
 .articles {
-    padding: 1rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -111,9 +118,15 @@ nav a:hover {
 }
 
 .articles article {
-    width: 25%;
-    background: #C6C6C6;
-    height: 20rem;
+    width: 33%;
+    border: solid darkgray 1px;
+    height: 31rem;
+    padding: 1rem;
+}
+
+.articles article p {
+    padding: 1rem;
+    font-size: 0.9rem;
 }
 
 /* Pied de page */
@@ -125,6 +138,83 @@ footer {
     height: 4rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+footer img {
+    width: 5rem;
+    height: 2.5rem;
+}
+
+footer img, footer a {
+    margin: 0 0.5rem;
 }
 
 /* Versions mobiles */
+
+@media screen and (max-width: 900px) {
+    .contenuesGeneral {
+        flex-direction: column;
+    }
+
+    .contenuesA {
+        width: 100%;
+        height: 7rem;
+        margin-bottom: 2rem;
+    }
+
+    .contenuesA aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .contenuesGeneral {
+        padding: 2rem 0;
+    }
+
+    .contenuesA {
+        padding:0.5rem;
+        font-size: 0.9rem;
+        height: 4rem;
+    }
+
+    .sectionB {
+        height: 40rem;
+    }
+
+    .articles {
+        flex-direction: column;
+    }
+
+    .articles article {
+        width: 100%;
+        height: 13.3rem;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    footer img, footer a {
+        margin: unset;
+    }
+}
