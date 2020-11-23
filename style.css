@@ -25,7 +25,7 @@ h1 {
     font-size: 3rem;
 }
 
-nav a, footer a, h1 {
+nav a, footer a, h1, .contenuesA a {
     color: #607185;
 }
 
@@ -48,9 +48,14 @@ header {
     font-size: 1.5rem;
 }
 
-.logo img {
-    width: 5rem;
+.logo .logoWeb {
+    width: 13rem;
     height: 5rem;
+}
+
+.logo .logoMobile {
+    visibility: hidden;
+    position: absolute;
 }
 
 nav {
@@ -61,12 +66,12 @@ nav {
     flex-direction: row;
 }
 
-nav a, footer a {
+nav a, footer a, .contenuesA a {
     text-decoration-line: none;
     padding: 0.3rem;
 }
 
-footer a:hover {
+footer a:hover, .contenuesA a:hover {
     color: #363e4e;
 }
 
@@ -172,6 +177,18 @@ footer img, footer a {
 }
 
 @media screen and (max-width: 600px) {
+    .logo .logoWeb {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .logo .logoMobile {
+        width: 5rem;
+        height: 5rem;
+        visibility: visible;
+        position: unset;
+    }
+
     nav a {
         font-size: 1rem;
     }
