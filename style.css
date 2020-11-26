@@ -14,7 +14,6 @@ body {
 }
 
 /* General */
-
 header, footer {
     background: #FFFFFF;
     color: black;
@@ -25,8 +24,22 @@ h1 {
     font-size: 3rem;
 }
 
-nav a, footer a, h1, .contenuesA a {
+h2 {
+    font-variant: all-small-caps;
+    font-size: 1.5rem;
+}
+
+nav a, footer a, h1, .contenuesA a, article a, h2{
     color: #607185;
+}
+
+nav a, footer a, .contenuesA a {
+    text-decoration-line: none;
+    padding: 0.3rem;
+}
+
+footer a:hover, .contenuesA a:hover, article a:hover {
+    color: #363e4e;
 }
 
 .articles, .contenuesA {
@@ -66,14 +79,6 @@ nav {
     flex-direction: row;
 }
 
-nav a, footer a, .contenuesA a {
-    text-decoration-line: none;
-    padding: 0.3rem;
-}
-
-footer a:hover, .contenuesA a:hover {
-    color: #363e4e;
-}
 
 nav a:first-child, nav a:first-child:hover {
     border: solid #5D738B 1px;
@@ -95,7 +100,7 @@ nav a:hover {
 .contenuesA {
     background: #EEEEEE;
     width: 25%;
-    height: 35rem;
+    height: 25rem;
     padding: 2rem;
     margin-right: 2rem;
     border: solid #88C2EA 0.2rem;
@@ -112,7 +117,7 @@ nav a:hover {
 }
 
 .sectionB {
-    height: 30rem;
+    height: 34.5rem;
 }
 
 .articles {
@@ -125,7 +130,7 @@ nav a:hover {
 .articles article {
     width: 33%;
     border: solid darkgray 1px;
-    height: 31rem;
+    height: 34.5rem;
     padding: 1rem;
 }
 
@@ -174,6 +179,10 @@ footer img, footer a {
         justify-content: space-evenly;
     }
 
+    .contenuesB {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -208,7 +217,7 @@ footer img, footer a {
     }
 
     .sectionB {
-        height: 40rem;
+        height: 100%;
     }
 
     .articles {
@@ -217,7 +226,7 @@ footer img, footer a {
 
     .articles article {
         width: 100%;
-        height: 13.3rem;
+        height: 100%;
     }
 
 }

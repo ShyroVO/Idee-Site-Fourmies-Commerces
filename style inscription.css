@@ -1,0 +1,109 @@
+/* Corps  */
+.contenuesB {
+    width: 100%;
+    border: solid #A1C037 0.2rem;
+    padding: 2rem;
+    margin: 0 2rem;
+}
+
+.sectionB {
+    height: 34.5rem;
+}
+
+.articles {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.articles article {
+    width: 100%;
+    border: solid darkgray 1px;
+    height: 34.5rem;
+    padding: 1rem;
+}
+
+.articles article p {
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.contenuesGeneral {
+    padding: 2rem 0;
+}
+
+/* Formulaire */
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form, label {
+    margin: 1rem;
+}
+
+input, label select {
+    padding: 0.5rem;
+}
+
+.infoGeneral, .infosMessage {
+    display: flex;
+}
+
+.infoGeneral {
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.infoGeneral .infosPerso, .infoGeneral .infosBoutique {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.infosPerso label, .infosBoutique label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.infosMessage {
+    flex-direction: column;
+}
+
+.infosMessage label textarea {
+    width: 100%;
+}
+
+.infosMessage button {
+    width: 20%;
+    border: solid #A1C037 1px;
+    border-radius: 20px;
+    color: #363e4e;
+    background: #EEEEEE;
+    padding: 0.5rem;
+}
+.infosMessage button:hover {
+     border: solid #363e4e 1px;
+ }
+
+form fieldset {
+    border: unset;
+}
+
+/* Versions mobiles */
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 600px) {
+    .infoGeneral {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 350px) {
+}
