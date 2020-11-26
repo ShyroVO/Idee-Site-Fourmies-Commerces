@@ -96,14 +96,27 @@ form fieldset {
 
 /* Versions mobiles */
 @media screen and (max-width: 900px) {
-
+    .contenuesB {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .infoGeneral {
         flex-direction: column;
     }
-}
 
-@media screen and (max-width: 350px) {
+    .sectionB {
+        height: 100%;
+    }
+
+    .infoGeneral .infosPerso, .infoGeneral .infosBoutique {
+        width: 100%;
+    }
+
+    .infosMessage button {
+        width: 100%;
+    }
+
 }
