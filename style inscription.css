@@ -78,6 +78,10 @@ form fieldset {
         width: 100%;
         margin: 0;
     }
+
+    .infosPerso label, .infosBoutique label {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 600px) {
