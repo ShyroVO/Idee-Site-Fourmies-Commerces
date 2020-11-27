@@ -93,11 +93,7 @@ form fieldset {
         height: 100%;
     }
 
-    .infoGeneral .infosPerso, .infoGeneral .infosBoutique {
-        width: 100%;
-    }
-
-    .infosMessage button {
+    .infoGeneral .infosPerso, .infoGeneral .infosBoutique, .infosMessage button {
         width: 100%;
     }
 
