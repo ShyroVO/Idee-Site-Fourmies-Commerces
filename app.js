@@ -1,3 +1,3 @@
 function rtn() {
-    alert("Page non disponible")
+    alert("Page non disponible");
 }
